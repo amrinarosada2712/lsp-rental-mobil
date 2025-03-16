@@ -115,8 +115,8 @@ $rentals = [
 
     <div class="container mt-4 text-center">
     <h3>Video Kolesi kami Fortuner</h3>
-    <video width="80%" controls>
-        <source src="vid/firtuner.mp4" type="video/mp4">
+    <video width="100%" controls>
+        <source src="vid/fortuner.mp4" type="video/mp4">
         Browser Anda tidak mendukung tag video.
     </video>
 </div>
