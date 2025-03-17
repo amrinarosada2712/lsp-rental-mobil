@@ -17,9 +17,12 @@
     // Mengecek apakah form telah dikirim (dengan metode POST)
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Validasi input
-    
+        $pilih_mobil = $_POST['car'] ?? $rentals[0][0];
+        $pilih_harga = array_column($rentals, 1, 0)[$pilih_mobil];
         $supir = isset($_POST['supir']);
         $durasi = $_POST['durasi'] ?? '';
+        $identitas = $_POST['identitas'] ?? '';
+
 
         if (!is_numeric($durasi)) {
             $errors[] = "Durasi harus berupa angka lebih dari 0";
